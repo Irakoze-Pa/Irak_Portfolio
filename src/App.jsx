@@ -8,6 +8,7 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Blog from "./components/sections/Blog";
 
 AOS.init();
 
@@ -31,6 +32,7 @@ function App() {
        <Home />
       <Projects />
       <About />
+      <Blog/>
       <Contact />
       <Footer/>
       </>

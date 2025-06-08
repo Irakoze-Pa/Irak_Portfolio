@@ -21,6 +21,7 @@ export default function Navbar() {
           <li><a href="#home" className="hover:text-blue-300 transition">Home</a></li>
           <li><a href="#projects" className="hover:text-blue-300 transition">Projects</a></li>
           <li><a href="#about" className="hover:text-blue-300 transition">About</a></li>
+          <li><a href="#blog" className="hover:text-blue-300 transition">Blogs</a></li>
           <li><a href="#contact" className="hover:text-blue-300 transition">Contact</a></li>
         </ul>
 
@@ -37,6 +38,7 @@ export default function Navbar() {
             <li><a href="#home" onClick={toggleMenu} className="hover:text-blue-300">Home</a></li>
             <li><a href="#projects" onClick={toggleMenu} className="hover:text-blue-300">Projects</a></li>
             <li><a href="#about" onClick={toggleMenu} className="hover:text-blue-300">About</a></li>
+            <li><a href="#blog" onClick={toggleMenu} className="hover:text-blue-300">Blogs</a></li>
             <li><a href="#contact" onClick={toggleMenu} className="hover:text-blue-300">Contact</a></li>
           </ul>
         </div>
