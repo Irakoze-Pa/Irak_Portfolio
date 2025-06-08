@@ -1,11 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import p1 from '../../assets/project1.png';
+import p2 from '../../assets/project2.png';
+import p3 from '../../assets/project3.png';
 
 const projects = [
   {
     title: "Food delivery App",
-    image: "/projects/project3.png", // Direct path
+    image: p3, // Direct path
     description: "Responsive application using React vite, Tailwindcss, framer Motion.",
     tags: ["React", "Tailwind", "Framer Motion"],
     live: "https://yourportfolio.com",
@@ -13,7 +16,7 @@ const projects = [
   },
   {
     title: "Clinic Managment System",
-    image: "/projects/project2.png", // Direct path
+    image: p2, // Direct path
     description: "Full-stack clinic system management with PHP, MySQL, and Bootstrap.",
     tags: ["PHP", "MySQL", "Bootstrap"],
     live: "#",
@@ -21,7 +24,7 @@ const projects = [
   },
    {
     title: "Hotel Booking App",
-    image: "/projects/project1.png", // Direct path
+    image: p1, // Direct path
     description: "Full-stack hotel booking platform built with PHP, MySQL, and Bootstrap.",
     tags: ["PHP", "MySQL", "Bootstrap"],
     live: "#",

@@ -1,10 +1,11 @@
 import { TypeAnimation } from "react-type-animation";
+import bg from '../../assets/hero-bg.jpg';
 
 export default function Home() {
   return (
     <section id="home"
       className="h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-center px-4"
-      style={{ backgroundImage: `url('/hero-bg.jpg')` }}
+      style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="bg-white bg-opacity-80 p-8 rounded-xl max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold text-[#102E50] mb-4">

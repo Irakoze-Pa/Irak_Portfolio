@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import contacthand from '../../assets/contacti.jpg';
 
 export default function Contact() {
   const form = useRef();
@@ -42,10 +43,10 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/contact.jpg"
-            alt="Contact"
-            className="w-full rounded-lg shadow-md max-w-md mx-auto"
-          />
+        src={contacthand}
+        alt="My Imported Image"
+        className="w-64 h-auto rounded-lg shadow-md"
+      />
         </motion.div>
 
         {/* Right: Contact Form */}
