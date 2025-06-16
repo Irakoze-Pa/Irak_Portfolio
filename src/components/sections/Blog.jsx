@@ -48,7 +48,7 @@ export default function Blog() {
                 <p className="text-sm text-gray-500 mb-2">{post.date}</p>
                 <p className="text-gray-800 mb-4">{post.excerpt}</p>
                 <a
-                  href="#"
+                  href="https://www.w3schools.com/"
                   className="text-blue-700 hover:underline font-medium"
                 >
                   Read more →

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutImage from "../../assets/about.jpeg";
+import aboutImage from "../../assets/about2.jpeg";
 
 const skills = [
   "HTML5", "CSS3", "JavaScript", "React",
