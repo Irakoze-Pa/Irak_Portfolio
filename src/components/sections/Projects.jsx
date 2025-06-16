@@ -11,24 +11,24 @@ const projects = [
     image: p3, // Direct path
     description: "Responsive application using React vite, Tailwindcss, framer Motion.",
     tags: ["React", "Tailwind", "Framer Motion"],
-    live: "https://yourportfolio.com",
-    github: "https://github.com/yourname/portfolio",
+  
+    github: "https://github.com/irakoze-pa/Irak_Portfolio/",
   },
   {
     title: "Clinic Managment System",
     image: p2, // Direct path
     description: "Full-stack clinic system management with PHP, MySQL, and Bootstrap.",
     tags: ["PHP", "MySQL", "Bootstrap"],
-    live: "#",
-    github: "#",
+    github: "https://github.com/irakoze-pa/Irak_Portfolio/",
+   
   },
    {
     title: "Hotel Booking App",
     image: p1, // Direct path
     description: "Full-stack hotel booking platform built with PHP, MySQL, and Bootstrap.",
     tags: ["PHP", "MySQL", "Bootstrap"],
-    live: "#",
-    github: "#",
+    github: "https://github.com/irakoze-pa/Irak_Portfolio/",
+   
   },
 ];
 
@@ -81,14 +81,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-white bg-[#102E50] hover:bg-blue-900 px-3 py-1 rounded"
-                  >
-                    <ExternalLink size={16} /> Live
-                  </a>
+                  
                   <a
                     href={project.github}
                     target="_blank"

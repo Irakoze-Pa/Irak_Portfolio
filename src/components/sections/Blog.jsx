@@ -6,21 +6,21 @@ import b3 from '../../assets/blog3.jpg';
 const blogPosts = [
   {
     id: 1,
-    title: "🚀 How I Built My Portfolio",
+    title: " How I Built My Portfolio",
     excerpt: "Discover how I used React, Vite, and Tailwind CSS to create a blazing-fast portfolio.",
     image: b1, // Place this image in `public` folder
     date: "June 2025",
   },
   {
     id: 2,
-    title: "📦 Using EmailJS in React",
+    title: " Using EmailJS in React",
     excerpt: "Learn how to integrate EmailJS for sending form data without a backend.",
     image: b2,
     date: "May 2025",
   },
   {
     id: 3,
-    title: "🌐 Responsive Design Tips",
+    title: " Responsive Design Tips",
     excerpt: "Explore essential principles for building beautiful mobile-first web apps.",
     image: b3,
     date: "April 2025",
