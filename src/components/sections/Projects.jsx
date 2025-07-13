@@ -1,32 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import p1 from '../../assets/project1.png';
-import p2 from '../../assets/project2.png';
-import p3 from '../../assets/project3.png';
+import p1 from '../../assets/invento.png';
+import p2 from '../../assets/myportfolio.png';
+import p3 from '../../assets/cleaning.png';
+import p4 from '../../assets/tresorsite.png';
+
 
 const projects = [
   {
-    title: "Food delivery App",
-    image: p3, // Direct path
-    description: "Responsive application using React vite, Tailwindcss, framer Motion.",
-    tags: ["React", "Tailwind", "Framer Motion"],
+    title: "Inventory Management System",
+    image: p1, // Direct path
+    description: "Full fonctional system using PHP, BOOTSTRAP, AJAX, MSQL.",
+    tags: ["PHP", "Bootstrap", "Mysql"],
   
     github: "https://github.com/irakoze-pa/Irak_Portfolio/",
   },
   {
-    title: "Clinic Managment System",
+    title: "My Portfolio",
     image: p2, // Direct path
-    description: "Full-stack clinic system management with PHP, MySQL, and Bootstrap.",
-    tags: ["PHP", "MySQL", "Bootstrap"],
+    description: "Responsive website with mailJs.",
+    tags: ["React", "Vite", "tailwindCss"],
     github: "https://github.com/irakoze-pa/Irak_Portfolio/",
    
   },
    {
-    title: "Hotel Booking App",
-    image: p1, // Direct path
-    description: "Full-stack hotel booking platform built with PHP, MySQL, and Bootstrap.",
+    title: "Cleaning Company Management System",
+    image: p3, // Direct path
+    description: "Full fonctional system using PHP, BOOTSTRAP, MSQL.",
     tags: ["PHP", "MySQL", "Bootstrap"],
+    github: "https://github.com/irakoze-pa/Irak_Portfolio/",
+   
+  },
+{
+    title: "Cleaning Company Website",
+    image: p4, // Direct path
+    description: "Responsive website with mailJs.",
+    tags: ["React", "Vite", "tailwindCss"],
     github: "https://github.com/irakoze-pa/Irak_Portfolio/",
    
   },

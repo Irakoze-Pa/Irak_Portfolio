@@ -51,7 +51,6 @@ export default function Blog() {
                   href="https://www.w3schools.com/"
                   className="text-blue-700 hover:underline font-medium"
                 >
-                  Read more →
                 </a>
               </div>
             </div>

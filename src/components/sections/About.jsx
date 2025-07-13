@@ -1,10 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import aboutImage from "../../assets/about2.jpeg";
+import cv from "../../assets/CV.pdf"; // adjust path as needed
 
 const skills = [
-  "HTML5", "CSS3", "JavaScript", "React",
-  "Node.js", "PHP", "MySQL", "Tailwind CSS"
+  { name: "React", level: 80 },
+  { name: "Node.js", level: 65 },
+  { name: "PHP", level: 70 },
+  { name: "MySQL", level: 80 },
+  { name: "HTML5", level: 85 },
+  { name: "CSS3", level: 80 },
+  { name: "JavaScript", level: 70 },
+  { name: "Bootstrap", level: 65 },
+  { name: "Tailwind CSS", level: 75 },
+  { name: "C#", level: 65 }
+
 ];
 
 export default function About() {
@@ -34,7 +44,7 @@ export default function About() {
           >
             <img
               src={aboutImage}
-              alt="About"
+              alt="About Me"
               className="rounded-xl shadow-md w-[80%] max-w-[300px] md:w-full object-cover"
             />
           </motion.div>
@@ -48,22 +58,41 @@ export default function About() {
             viewport={{ once: true }}
           >
             <p>
-              I'm a passionate <strong>Full-Stack Web Developer</strong> experienced in building dynamic, scalable web applications using{" "}
-              <span className="text-[#102E50] font-medium">React, Node.js, PHP, MySQL, and Tailwind CSS</span>.
+              I’m a passionate <strong>Full-Stack Developer & Software Engineer</strong> experienced in building dynamic, scalable web applications.
+              I specialize in <span className="text-[#102E50] font-medium">React, Node.js, PHP, MySQL, Bootstrap, and Tailwind CSS</span>.
             </p>
             <p>
-              I enjoy solving complex problems and creating clean, efficient user experiences from frontend to backend.
+              I enjoy solving complex problems and creating clean, efficient user experiences—from frontend to backend.
             </p>
             <p>
-              I value clean code, constant learning, and meaningful collaboration.
+              I value clean code, continuous learning, and meaningful collaboration.
             </p>
+            <div>
+              <h3 className="text-xl font-semibold text-[#102E50] mb-3">Education</h3>
+              <div className="space-y-3">
+                <div className="bg-white border-l-4 border-[#102E50] p-3 rounded shadow">
+                  <h4 className="font-semibold text-[#102E50]">
+                    Bachelor’s Degree in Computer Science
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Light University of Bujumbura – 2015–2018
+                  </p>
+                </div>
+                <div className="bg-white border-l-4 border-[#102E50] p-3 rounded shadow">
+                  <h4 className="font-semibold text-[#102E50]">High School Diploma</h4>
+                  <p className="text-gray-600 text-sm">
+                    Lycée Thomas d’Aquin (Rutovu) – 2007–2014
+                  </p>
+                </div>
+              </div>
+            </div>
             <a
-              href="/CV.pdf"
-              download
-              className="bg-[#102E50] text-white px-5 py-2 rounded-md hover:bg-blue-900 transition inline-block"
-            >
-              Download CV
-            </a>
+  href={cv}
+  download="My_CV.pdf"
+  className="bg-[#102E50] text-white px-5 py-2 rounded-md hover:bg-blue-900 transition inline-block"
+>
+  Download CV
+</a>
           </motion.div>
 
           {/* Skills & Education */}
@@ -77,34 +106,29 @@ export default function About() {
             {/* Skills */}
             <div>
               <h3 className="text-xl font-semibold text-[#102E50] mb-3">Tech Skills</h3>
-              <div className="grid grid-cols-2 gap-2">
-                {skills.map((skill, index) => (
+              <div className="max-h-64 overflow-y-auto space-y-2 pr-2">
+                {skills.map((skill, i) => (
                   <div
-                    key={index}
-                    className="bg-white text-[#102E50] px-3 py-1.5 text-sm font-medium rounded shadow hover:bg-[#102E50] hover:text-white transition text-center"
+                    key={i}
+                    className="bg-white text-[#102E50] p-3 rounded shadow hover:bg-[#102E50] hover:text-white transition flex flex-col"
                   >
-                    {skill}
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-base font-medium">{skill.name}</span>
+                      <span className="text-sm">{skill.level}%</span>
+                    </div>
+                    <div className="w-full h-2 bg-gray-200 rounded overflow-hidden">
+                      <div
+                        className="h-full bg-[#102E50] rounded transition-width duration-300 ease-in-out"
+                        style={{ width: `${skill.level}%` }}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Education */}
-            <div>
-              <h3 className="text-xl font-semibold text-[#102E50] mb-3">Education</h3>
-              <div className="space-y-3">
-                <div className="bg-white border-l-4 border-[#102E50] p-3 rounded shadow">
-                  <h4 className="font-semibold text-[#102E50]">
-                    Bachelor's Degree in Computer Science
-                  </h4>
-                  <p className="text-gray-600 text-sm">Light University of bujumbura  – 2015–2018</p>
-                </div>
-                <div className="bg-white border-l-4 border-[#102E50] p-3 rounded shadow">
-                  <h4 className="font-semibold text-[#102E50]">High School Diploma</h4>
-                  <p className="text-gray-600 text-sm">Lycee Thomas of Aquino at Rutovu – 2007–2014</p>
-                </div>
-              </div>
-            </div>
+            
           </motion.div>
         </div>
       </div>

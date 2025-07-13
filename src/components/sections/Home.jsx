@@ -15,11 +15,11 @@ export default function Home() {
         <TypeAnimation
           sequence={[
             "Full-Stack Developer",
-            2000,
-            "Frontend Enthusiast",
-            2000,
-            "Backend Builder",
-            2000,
+            3000,
+            "Web Developer",
+            3000,
+            "Software Engineer",
+            3000,
           ]}
           wrapper="h2"
           cursor={true}
