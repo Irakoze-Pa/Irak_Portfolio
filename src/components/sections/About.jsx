@@ -88,7 +88,7 @@ export default function About() {
             </div>
             <a
   href={cv}
-  download="My_CV.pdf"
+  download="MyCv.pdf"
   className="bg-[#102E50] text-white px-5 py-2 rounded-md hover:bg-blue-900 transition inline-block"
 >
   Download CV
