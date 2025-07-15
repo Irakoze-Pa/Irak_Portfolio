@@ -9,12 +9,11 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50" style={{ backgroundColor: "#102E50" }}>
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
+        {/* Logo with clickable link */}
+        <a href="#home" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="w-10 h-10" />
           <h1 className="text-xl font-bold text-white">MyPortfolio</h1>
-        </div>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-white font-medium">
