@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import aboutImage from "../../assets/about2.jpeg";
-import cv from "../../assets/CV.pdf"; // adjust path as needed
+import cv from "../../assets/MyCv.pdf"; // adjust path as needed
 
 const skills = [
   { name: "React", level: 80 },
